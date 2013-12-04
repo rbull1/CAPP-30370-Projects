@@ -1,0 +1,13 @@
+body {font-family:sans-serif;}
+#h1 {color:green;}
+#h1 {font-family:serif;}
+img {float:right;}
+#h2 {color:green;}
+#h2 {font-family:serif;}
+#h3 {color:green;}
+#h3 {font-family:serif;}
+blockquote {background:linear-gradient(to bottom, red 70%,orange 80%,yellow 20%,green 100%);}
+blockquote {padding:5;}
+figcaption {float:right;}
+img {border-radius:2em;}
+img {box-shadow:10px 10px 5px #FFFF00;}

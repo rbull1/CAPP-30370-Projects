@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Project 13</title>
+	</head>
+	<style>
+		#mouseover{width:200px;
+  			height:200px;
+  			background-color:black;}
+	</style>
+	<body>
+		<h1>Project 13</h1>
+		<h2>Event 1</h2>
+		<button id="alert">Alert</button>
+		<script>
+  var myButton = document.getElementById('alert');
+  myButton.addEventListener("click", function(){alert('You Clicked a Button');
+  });
+  </script>
+  		<h2>Event 2</h2>
+  		<button id="two">Prompt</button>
+  		<script>
+  			document.getElementById('two').addEventListener("click", function(e){
+  				var input_name = prompt( 'What is your name?');
+  				for(i = 0; i<5; i++){
+  					console.log(input_name);
+  				}
+  			})
+  		</script>
+  		<h2>Event 3</h2>
+  		<script>
+  var my_other_array = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
+  for(i = 0; i < my_other_array.length; i++) {
+    document.write(my_other_array[i]+"<br>");
+  }
+  		</script>
+  		<h2>Mouse Events</h2>
+  		<div id="mouseover"></div>
+  	<script>
+var mouseEvents = document.getElementById("mouseover");
+mouseEvents.addEventListener("mouseenter", function(){
+    console.log( 'Mouse entered the box');
+})
+mouseEvents.addEventListener("mouseleave", function(){
+    console.log( 'Mouse left the box');
+});
+</script>
+		
+		<h2>Event 5</h2>
+		<input type="text" id="First"> <input type="text" id="Second">
+  <button id="check">Check</button>
+   <script>
+var checkbutton = document.getElementById("check");
+checkbutton.addEventListener("click", function() {
+      if(document.getElementById("First").value === document.getElementById("Second").value) {
+    alert("Equal");
+  } 
+  else {
+    alert("Not Equal");
+  };
+});
+    </script>	
+	</body>
+</html>
+

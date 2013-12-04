@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html/css; charset=utf-8" />
+		<link href="project11.css" rel="stylesheet"></link>
+		<title>Transitions//Project 11</title>
+		<style>
+			.rotate:hover{
+				-webkit-transform:rotate(180deg);
+			}
+			.grow:hover{
+				-webkit-transform:scale(1.5);
+			}
+			.skew:hover{
+				-webkit-transform:rotate(-10deg);
+			}
+			.box {
+  				display:inline-block;
+  				margin:2em;
+  				width:250px;
+  				height:250px;
+  				background-color:orange;
+  				box-shadow: 10px 10px 5px #000000;
+  				transition:all 1s ease-in-out;
+  			}
+  			.box:hover{
+  				background-color:black;
+  				box-shadow: 10px 10px 5px #FFA500;
+  			}
+  			.box2 {
+  				display:inline-block;
+  				margin:2em;
+  				width:250px;
+  				height:250px;
+  				background-color:orange;
+  				box-shadow: 10px 10px 5px #000000;
+  				transition:all 1s ease-in-out;
+  			}
+  			.box2:hover {
+  				-webkit-transform:rotate(25deg) scale(1.05);
+  				-webkit-transform-origin:top right;			
+  			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<h1>Transitions</h1>
+		
+		<figure>
+				<img class="rotate" src="http://cf2.imgobject.com/t/p/w185/iYrYVlNOZdPAWL7GXRCLMwxA9yG.jpg"/>
+		</figure>
+		<figure>
+				<img class="grow" src="http://images.artistdirect.com/Images/nad/video/tribune/37919/37919_ak.jpg"/>
+		</figure>
+		<figure>
+			<img class="skew" src="http://cdn.buzznet.com/assets/users16/pattygopez/default/white-goodman-dodgeball-true-underdog--large-msg-132259950812.jpg"/>
+		</figure>
+		<div class="box"></div>
+		<div class="box2"></div>
+	</body>
+</html>
+
